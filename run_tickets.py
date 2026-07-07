@@ -48,7 +48,12 @@ load_env_file()
 #   https://agents.toolhouse.ai/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 # Copy that exact URL from your Toolhouse dashboard's "Deploy" tab and paste
 # it below, or set it as an environment variable so you don't hardcode it.
-AGENT_URL = os.environ.get("TOOLHOUSE_AGENT_URL", "https://agents.toolhouse.ai/b17bee44-f330-4c77-ab30-920fd5806ba3")
+AGENT_URL = os.environ.get("TOOLHOUSE_AGENT_URL")
+if not AGENT_URL:
+    raise ValueError(
+        "TOOLHOUSE_AGENT_URL environment variable is not set. "
+        "Please specify it in your .env file or your shell environment."
+    )
 
 # If the user provided a dashboard URL instead of the API endpoint, auto-correct it.
 if AGENT_URL.startswith("https://toolhouse.app/"):
@@ -60,7 +65,7 @@ if AGENT_URL.startswith("https://toolhouse.app/"):
 # (Pro plan). Free-tier agents are public and this can usually stay blank -
 # check the exact call format Toolhouse shows you on the Deploy tab; if it
 # includes an Authorization header, you'll need this.
-TOOLHOUSE_API_KEY = os.environ.get("TOOLHOUSE_API_KEY", "th-fzlOPYXcXypWG3PymVbdGpUg1mrka7lVY7e_WsW8q9g")
+TOOLHOUSE_API_KEY = os.environ.get("TOOLHOUSE_API_KEY")
 
 # Some Toolhouse deployments expose a public web URL that accepts POST requests
 # directly, while others require the authenticated Toolhouse API endpoint.

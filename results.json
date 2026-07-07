@@ -8,7 +8,7 @@
     "confidence": 0.98,
     "routing_team": "Engineering",
     "unsure": false,
-    "reasoning": "The phrases \"None of our users can log in since 9am\" and \"affecting our entire company account\" indicate a system-wide login outage, which fits Technical / Bug and meets the Critical urgency definition.",
+    "reasoning": "The phrases \"Everything is down,\" \"None of our users can log in since 9am,\" and \"affecting our entire company account\" indicate a system-wide outage, which fits Technical / Bug with Critical urgency.",
     "error": ""
   },
   {
@@ -17,10 +17,10 @@
     "body": "I upgraded to Pro yesterday specifically for the analytics dashboard but it just shows a blank white screen. I need this for a client call tomorrow.",
     "category": "Technical / Bug",
     "urgency": "High",
-    "confidence": 0.92,
+    "confidence": 0.95,
     "routing_team": "Engineering",
     "unsure": false,
-    "reasoning": "The phrases \"upgraded to Pro yesterday\" and \"analytics dashboard\" plus \"shows a blank white screen\" indicate a paid core feature is inaccessible due to a bug, and \"I need this for a client call tomorrow\" supports high urgency.",
+    "reasoning": "The phrases \"analytics dashboard but it just shows a blank white screen\" indicate a product malfunction, and \"upgraded to Pro yesterday\" plus \"I need this for a client call tomorrow\" shows a paid core feature the customer cannot access, making this High urgency.",
     "error": ""
   },
   {
@@ -32,7 +32,7 @@
     "confidence": 0.97,
     "routing_team": "Engineering",
     "unsure": false,
-    "reasoning": "The phrases \"CSV export button on the reports page doesn't work\" and \"I can still copy-paste the data manually for now\" indicate a product bug with a workaround, which fits Technical / Bug at Medium urgency.",
+    "reasoning": "The phrases \"Export button broken\" and \"CSV export button on the reports page doesn't work\" indicate a product malfunction, while \"I can still copy-paste the data manually for now\" shows a workaround exists, supporting Medium urgency.",
     "error": ""
   },
   {
@@ -41,10 +41,10 @@
     "body": "Just wondering where in settings I can update the email address invoices get sent to.",
     "category": "Billing & Payments",
     "urgency": "Low",
-    "confidence": 0.98,
+    "confidence": 0.97,
     "routing_team": "Billing Team",
     "unsure": false,
-    "reasoning": "The phrases \"invoice email\" and \"update the email address invoices get sent to\" indicate a billing-related how-to question, which fits Billing & Payments with low urgency.",
+    "reasoning": "The phrases \"invoice email\" and \"update the email address invoices get sent to\" indicate a billing-related how-to question, which fits Billing & Payments with Low urgency.",
     "error": ""
   },
   {
@@ -56,7 +56,7 @@
     "confidence": 0.99,
     "routing_team": "Product Team",
     "unsure": false,
-    "reasoning": "The phrases \"adding a dark mode option\" and \"would make late-night work much easier\" clearly indicate a request for a new product capability rather than a bug or access issue.",
+    "reasoning": "The phrases \"adding a dark mode option\" and \"would make late-night work much easier\" clearly indicate a request for a new product feature rather than a bug or access issue.",
     "error": ""
   },
   {
@@ -65,10 +65,10 @@
     "body": "I think there may have been a data breach - I'm seeing login attempts from countries I've never visited. I'm considering involving a lawyer if this isn't addressed.",
     "category": "Account & Access",
     "urgency": "Critical",
-    "confidence": 0.96,
+    "confidence": 0.95,
     "routing_team": "Escalations",
     "unsure": false,
-    "reasoning": "The phrases \"data breach,\" \"login attempts from countries I've never visited,\" and \"involving a lawyer\" indicate an account security issue, and the exact keyword \"data breach\" triggers Critical urgency and Escalations routing.",
+    "reasoning": "The phrases \"data breach\" and \"lawyer\" indicate a security/legal escalation, while \"login attempts from countries I've never visited\" points to an account access concern.",
     "error": ""
   },
   {
@@ -77,10 +77,10 @@
     "body": "We're trying to configure SSO for our team and the docs aren't quite matching what we see in the admin panel.",
     "category": "Account & Access",
     "urgency": "High",
-    "confidence": 0.88,
+    "confidence": 0.92,
     "routing_team": "Identity & Security Team",
     "unsure": false,
-    "reasoning": "The phrases \"configure SSO for our team\" and \"docs aren't quite matching what we see in the admin panel\" indicate an account access/setup issue, and the Enterprise flag raises the otherwise Low how-to urgency to High.",
+    "reasoning": "The phrases \"configure SSO for our team\" and \"docs aren't quite matching what we see in the admin panel\" indicate an account access/setup issue, and the \"[Account tier: Enterprise]\" flag raises urgency to High under the enterprise floor rule.",
     "error": ""
   },
   {
@@ -92,7 +92,7 @@
     "confidence": 0.58,
     "routing_team": "Human Review",
     "unsure": true,
-    "reasoning": "The phrases \"charged twice\" point to Billing & Payments while \"app crashed\" and \"maybe a bug caused a duplicate charge\" add Technical / Bug mixed signals, so this is ambiguous and needs review.",
+    "reasoning": "The phrases \"charged twice\" suggest Billing & Payments while \"app crashed\" and \"maybe a bug caused a duplicate charge\" introduce Technical / Bug mixed signals, so the ticket is ambiguous and needs review.",
     "error": ""
   },
   {
@@ -101,10 +101,10 @@
     "body": "I've reported this same login bug twice before and nothing's been fixed. I'm extremely frustrated and considering canceling my subscription.",
     "category": "Complaint / Escalation",
     "urgency": "Medium",
-    "confidence": 0.86,
+    "confidence": 0.89,
     "routing_team": "Human Review",
     "unsure": true,
-    "reasoning": "Phrases like \"third time I've had to email support,\" \"nothing's been fixed,\" and \"extremely frustrated\" indicate a complaint/escalation, while \"login bug\" also signals a technical issue, creating mixed signals that require Human Review.",
+    "reasoning": "The phrases \"third time I've had to email support,\" \"same login bug twice before,\" and \"extremely frustrated and considering canceling my subscription\" show both an unresolved complaint and an account-access/technical issue, so the best fit is Complaint / Escalation but the mixed signals require Human Review.",
     "error": ""
   },
   {
@@ -113,10 +113,34 @@
     "body": "asdkjfh",
     "category": "General Inquiry",
     "urgency": "Low",
-    "confidence": 0.22,
+    "confidence": 0.18,
     "routing_team": "Human Review",
     "unsure": true,
-    "reasoning": "The body text \"asdkjfh\" is nonsensical and provides no clear support signal beyond the generic subject \"hi,\" so this is ambiguous and requires human review.",
+    "reasoning": "The body text \"asdkjfh\" is nonsensical and provides no clear issue details, so this is best-guessed as General Inquiry with low confidence and requires Human Review.",
+    "error": ""
+  },
+  {
+    "id": 11,
+    "subject": "Blue screen laptop on windows laptop",
+    "body": "I",
+    "category": "Technical / Bug",
+    "urgency": "Low",
+    "confidence": 0.28,
+    "routing_team": "Human Review",
+    "unsure": true,
+    "reasoning": "The body is only \"I\" and the subject \"Blue screen laptop on windows laptop\" suggests a technical issue, but the input is too incomplete to classify confidently.",
+    "error": ""
+  },
+  {
+    "id": 12,
+    "subject": "Problem connecting earpods",
+    "body": "I've a problem to connect apple earpods to my mobile phone",
+    "category": "General Inquiry",
+    "urgency": "Low",
+    "confidence": 0.99,
+    "routing_team": "Tier-1 Support",
+    "unsure": false,
+    "reasoning": "The phrases \"problem to connect apple earpods\" and \"to my mobile phone\" describe a general how-to/device connectivity question rather than an account, billing, product request, or SaaS platform issue.",
     "error": ""
   }
 ]
