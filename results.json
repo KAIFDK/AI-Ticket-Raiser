@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "subject": "Everything is down",
+    "body": "None of our users can log in since 9am. This is affecting our entire company account. Please help immediately.",
+    "category": "Technical / Bug",
+    "urgency": "Critical",
+    "confidence": 0.98,
+    "routing_team": "Engineering",
+    "unsure": false,
+    "reasoning": "The phrases \"None of our users can log in since 9am\" and \"affecting our entire company account\" indicate a system-wide login outage, which fits Technical / Bug and meets the Critical urgency definition.",
+    "error": ""
+  },
+  {
+    "id": 2,
+    "subject": "Can't access the analytics dashboard I paid for",
+    "body": "I upgraded to Pro yesterday specifically for the analytics dashboard but it just shows a blank white screen. I need this for a client call tomorrow.",
+    "category": "Technical / Bug",
+    "urgency": "High",
+    "confidence": 0.92,
+    "routing_team": "Engineering",
+    "unsure": false,
+    "reasoning": "The phrases \"upgraded to Pro yesterday\" and \"analytics dashboard\" plus \"shows a blank white screen\" indicate a paid core feature is inaccessible due to a bug, and \"I need this for a client call tomorrow\" supports high urgency.",
+    "error": ""
+  },
+  {
+    "id": 3,
+    "subject": "Export button broken",
+    "body": "The CSV export button on the reports page doesn't work, but I can still copy-paste the data manually for now.",
+    "category": "Technical / Bug",
+    "urgency": "Medium",
+    "confidence": 0.97,
+    "routing_team": "Engineering",
+    "unsure": false,
+    "reasoning": "The phrases \"CSV export button on the reports page doesn't work\" and \"I can still copy-paste the data manually for now\" indicate a product bug with a workaround, which fits Technical / Bug at Medium urgency.",
+    "error": ""
+  },
+  {
+    "id": 4,
+    "subject": "How do I change my invoice email?",
+    "body": "Just wondering where in settings I can update the email address invoices get sent to.",
+    "category": "Billing & Payments",
+    "urgency": "Low",
+    "confidence": 0.98,
+    "routing_team": "Billing Team",
+    "unsure": false,
+    "reasoning": "The phrases \"invoice email\" and \"update the email address invoices get sent to\" indicate a billing-related how-to question, which fits Billing & Payments with low urgency.",
+    "error": ""
+  },
+  {
+    "id": 5,
+    "subject": "Would love dark mode",
+    "body": "Any chance you're adding a dark mode option? Would make late-night work much easier on the eyes.",
+    "category": "Feature Request",
+    "urgency": "Low",
+    "confidence": 0.99,
+    "routing_team": "Product Team",
+    "unsure": false,
+    "reasoning": "The phrases \"adding a dark mode option\" and \"would make late-night work much easier\" clearly indicate a request for a new product capability rather than a bug or access issue.",
+    "error": ""
+  },
+  {
+    "id": 6,
+    "subject": "Concerned about my data",
+    "body": "I think there may have been a data breach - I'm seeing login attempts from countries I've never visited. I'm considering involving a lawyer if this isn't addressed.",
+    "category": "Account & Access",
+    "urgency": "Critical",
+    "confidence": 0.96,
+    "routing_team": "Escalations",
+    "unsure": false,
+    "reasoning": "The phrases \"data breach,\" \"login attempts from countries I've never visited,\" and \"involving a lawyer\" indicate an account security issue, and the exact keyword \"data breach\" triggers Critical urgency and Escalations routing.",
+    "error": ""
+  },
+  {
+    "id": 7,
+    "subject": "[Account tier: Enterprise] Question about SSO setup",
+    "body": "We're trying to configure SSO for our team and the docs aren't quite matching what we see in the admin panel.",
+    "category": "Account & Access",
+    "urgency": "High",
+    "confidence": 0.88,
+    "routing_team": "Identity & Security Team",
+    "unsure": false,
+    "reasoning": "The phrases \"configure SSO for our team\" and \"docs aren't quite matching what we see in the admin panel\" indicate an account access/setup issue, and the Enterprise flag raises the otherwise Low how-to urgency to High.",
+    "error": ""
+  },
+  {
+    "id": 8,
+    "subject": "Billing issue?? or bug",
+    "body": "I was charged twice but also the app crashed right after, not sure if related, maybe a bug caused a duplicate charge, please advise.",
+    "category": "Billing & Payments",
+    "urgency": "Medium",
+    "confidence": 0.58,
+    "routing_team": "Human Review",
+    "unsure": true,
+    "reasoning": "The phrases \"charged twice\" point to Billing & Payments while \"app crashed\" and \"maybe a bug caused a duplicate charge\" add Technical / Bug mixed signals, so this is ambiguous and needs review.",
+    "error": ""
+  },
+  {
+    "id": 9,
+    "subject": "This is the third time I've had to email support",
+    "body": "I've reported this same login bug twice before and nothing's been fixed. I'm extremely frustrated and considering canceling my subscription.",
+    "category": "Complaint / Escalation",
+    "urgency": "Medium",
+    "confidence": 0.86,
+    "routing_team": "Human Review",
+    "unsure": true,
+    "reasoning": "Phrases like \"third time I've had to email support,\" \"nothing's been fixed,\" and \"extremely frustrated\" indicate a complaint/escalation, while \"login bug\" also signals a technical issue, creating mixed signals that require Human Review.",
+    "error": ""
+  },
+  {
+    "id": 10,
+    "subject": "hi",
+    "body": "asdkjfh",
+    "category": "General Inquiry",
+    "urgency": "Low",
+    "confidence": 0.22,
+    "routing_team": "Human Review",
+    "unsure": true,
+    "reasoning": "The body text \"asdkjfh\" is nonsensical and provides no clear support signal beyond the generic subject \"hi,\" so this is ambiguous and requires human review.",
+    "error": ""
+  }
+]

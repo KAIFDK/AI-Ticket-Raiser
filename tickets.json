@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "subject": "Everything is down",
+    "body": "None of our users can log in since 9am. This is affecting our entire company account. Please help immediately."
+  },
+  {
+    "id": 2,
+    "subject": "Can't access the analytics dashboard I paid for",
+    "body": "I upgraded to Pro yesterday specifically for the analytics dashboard but it just shows a blank white screen. I need this for a client call tomorrow."
+  },
+  {
+    "id": 3,
+    "subject": "Export button broken",
+    "body": "The CSV export button on the reports page doesn't work, but I can still copy-paste the data manually for now."
+  },
+  {
+    "id": 4,
+    "subject": "How do I change my invoice email?",
+    "body": "Just wondering where in settings I can update the email address invoices get sent to."
+  },
+  {
+    "id": 5,
+    "subject": "Would love dark mode",
+    "body": "Any chance you're adding a dark mode option? Would make late-night work much easier on the eyes."
+  },
+  {
+    "id": 6,
+    "subject": "Concerned about my data",
+    "body": "I think there may have been a data breach - I'm seeing login attempts from countries I've never visited. I'm considering involving a lawyer if this isn't addressed."
+  },
+  {
+    "id": 7,
+    "subject": "[Account tier: Enterprise] Question about SSO setup",
+    "body": "We're trying to configure SSO for our team and the docs aren't quite matching what we see in the admin panel."
+  },
+  {
+    "id": 8,
+    "subject": "Billing issue?? or bug",
+    "body": "I was charged twice but also the app crashed right after, not sure if related, maybe a bug caused a duplicate charge, please advise."
+  },
+  {
+    "id": 9,
+    "subject": "This is the third time I've had to email support",
+    "body": "I've reported this same login bug twice before and nothing's been fixed. I'm extremely frustrated and considering canceling my subscription."
+  },
+  {
+    "id": 10,
+    "subject": "hi",
+    "body": "asdkjfh"
+  }
+]
