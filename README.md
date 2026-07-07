@@ -65,6 +65,35 @@ Upon completion, it will output logs for each ticket processed and save the resu
 - `results.json` (Structured JSON representation)
 - `results.csv` (Tabular format, ready for spreadsheet import)
 
+### Executing a Specific Ticket
+
+If you want to execute classification for a **single specific ticket** instead of the entire batch, run:
+```bash
+python run_single_ticket.py
+```
+
+This will:
+1. List all available tickets from `tickets.json` with their IDs and subjects.
+2. Prompt you to enter a ticket ID.
+3. Classify that ticket through the Toolhouse agent.
+4. Output the results beautifully in your console.
+5. Merge and update this ticket's result in `results.json` and `results.csv` without disturbing the other tickets' results.
+
+---
+
+## Adding Support Tickets
+
+You can use the simple interactive command-line interface to add new tickets to `tickets.json` before running the classifier:
+```bash
+python add_ticket.py
+```
+
+This will:
+1. Load any existing tickets.
+2. Auto-increment and assign the next available ticket ID.
+3. Prompt you for the ticket `Subject` and `Body`.
+4. Append the ticket to `tickets.json`.
+
 ---
 
 ## Sample Inputs and Outputs
